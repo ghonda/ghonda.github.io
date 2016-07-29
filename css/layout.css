@@ -1,0 +1,374 @@
+/*
+=====================================================================
+*   Ceevee v1.0 Layout Stylesheet
+*   url: styleshout.com
+*   03-18-2014
+=====================================================================
+
+   TOC:
+   a. General Styles
+   b. About Section
+   c. Work Section
+   d. Skill Section
+   e. Education Section
+   f. Extra Education Section
+   g. Languages Section
+   h. Footer
+
+===================================================================== */
+
+/* ------------------------------------------------------------------ */
+/* a. General Styles
+/* ------------------------------------------------------------------ */
+
+body { background: #0f0f0f; }
+
+/* primary navigation
+--------------------------------------------------------------------- */
+#nav-wrap ul, #nav-wrap li, #nav-wrap a {
+	 margin: 0;
+	 padding: 0;
+	 border: none;
+	 outline: none;
+}
+
+/* nav-wrap */
+#nav-wrap {
+   font: 12px 'opensans-bold', sans-serif;
+   width: 100%;
+   text-transform: uppercase;
+   letter-spacing: 2.5px;
+   margin: 0 auto;
+   z-index: 100;
+   position: fixed;
+   left: 0;
+   top: 0;
+}
+.opaque { background-color: #333; }
+
+/* hide toggle button */
+#nav-wrap > a.mobile-btn { display: none; }
+
+ul#nav {
+   min-height: 48px;
+   width: auto;
+
+   /* center align the menu */
+   text-align: center;
+}
+ul#nav li {
+   position: relative;
+   list-style: none;
+   height: 48px;
+   display: inline-block;
+}
+
+/* Links */
+ul#nav li a {
+
+/* 8px padding top + 8px padding bottom + 32px line-height = 48px */
+
+   display: inline-block;
+   padding: 8px 13px;
+   line-height: 32px;
+	text-decoration: none;
+   text-align: left;
+   color: #fff;
+
+	-webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
+}
+
+ul#nav li a:active { background-color: transparent !important; }
+ul#nav li.current a { color: #F06000; }
+
+
+/* ------------------------------------------------------------------ */
+/* b. Profile Section
+/* ------------------------------------------------------------------ */
+
+#profile {
+   background: #2B2B2B;
+   padding-top: 96px;
+   padding-bottom: 66px;
+   overflow: hidden;
+}
+
+#profile a, #profile a:visited  { color: #fff; }
+#profile a:hover, #profile a:focus { color: #F06000; }
+
+#profile h1 {
+   font: 33px/40px 'opensans-bold', sans-serif;
+   color: #fff;
+   margin-bottom: 12px;
+}
+
+#profile h1 span {
+   color:#F06000;
+}
+#profile p {
+   line-height: 30px;
+   color: #7A7A7A;
+}
+
+#profile i{
+  font-size: x-large;
+  color: light-gray;
+}
+
+
+#profile .profile-pic {
+   position: relative;
+   width: 120px;
+   height: 120px;
+   border-radius: 100%;
+}
+#profile .contact-details { width: 41.66667%; }
+#profile .download {
+   width: 58.33333%;
+   padding-top: 6px;
+}
+#profile .main-col { padding-right: 5%; }
+#profile .download .button {
+   margin-top: 6px;
+   background: #444;
+}
+#profile .download .button:hover {
+   background: #fff;
+   color: #2B2B2B;
+}
+#profile .download .button i {
+   margin-right: 15px;
+   font-size: 20px;
+}
+
+/* profile social links */
+#profile .social {
+   margin: 0px -15px;
+   padding: 0;
+   font-size: 30px;
+   text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
+}
+#profile .social li {
+   display: inline-block;
+   margin: 0 15px;
+   padding: 0;
+}
+#profile .social li a { color: #fff; }
+#profile .social li a:hover { color: #F06000; }
+
+
+/* ------------------------------------------------------------------ */
+/* c. Work Section
+/* ------------------------------------------------------------------ */
+
+#work {
+   background: #fff;
+   padding-top: 70px;
+   padding-bottom: 0px;
+   overflow: hidden;
+}
+
+#work a, #work a:visited  { color: #6E7881 }
+#work a:hover, #work a:focus { color: #F06000; }
+
+#work h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+#work h1 span {
+   border-bottom: 3px solid #F06000;
+   padding-bottom: 6px;
+}
+#work h3 {
+   font: 25px/30px 'opensans-bold', sans-serif;
+}
+
+#work .header-col { padding-top: 9px; }
+#work .main-col { padding-right: 10%; }
+
+.experience, .work {
+   margin-bottom: 48px;
+   padding-bottom: 24px;
+   border-bottom: 1px solid #E8E8E8;
+}
+#work .info {
+   font: 20px/28px 'opensans-bold', serif;
+   color: #6E7881;
+   margin-bottom: 18px;
+   margin-top: 9px;
+}
+#work .info span {
+   margin-right: 5px;
+   margin-left: 5px;
+}
+#work .date {
+   font: 15px/24px 'opensans-regular', sans-serif;
+   margin-top: 6px;
+}
+
+#work ul {
+   list-style-type:disc;
+   margin-left: 18px;
+}
+
+/* ------------------------------------------------------------------ */
+/* d. Skill Section
+/* ------------------------------------------------------------------ */
+
+#skill {
+   background: #fff;
+   padding-top: 70px;
+   padding-bottom: 0px;
+   overflow: hidden;
+}
+
+#skill h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+#skill h1 span {
+   border-bottom: 3px solid #F06000;
+   padding-bottom: 6px;
+}
+
+
+#skill ul {
+   list-style-type:disc;
+   margin-left: 18px;
+}
+
+#skill  canvas{
+      margin: 40px;
+}
+
+#skill  img{
+      height: 96px;
+      width: 96px;
+      position:absolute;
+      margin: 47px 0 0 47px;
+      border-radius:50%;
+}
+
+/* ------------------------------------------------------------------ */
+/* c. Education Section
+/* ------------------------------------------------------------------ */
+
+#education {
+   background: #2B2B2B;
+   padding-top: 70px;
+   padding-bottom: 0px;
+   overflow: hidden;
+}
+
+#education h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   color: #FFFFFF;
+}
+#education h1 span {
+   border-bottom: 3px solid #F06000;
+   padding-bottom: 6px;
+}
+#education h3 {
+   font: 25px/30px 'opensans-bold', sans-serif;
+   color: #FFFFFF;
+}
+
+#education .info {
+   font: 20px/28px 'opensans-bold', serif;
+   color: #6A6A6A;
+   margin-bottom: 18px;
+   margin-top: 9px;
+}
+
+/* ------------------------------------------------------------------ */
+/* i. Footer
+/* ------------------------------------------------------------------ */
+
+footer {
+   padding-top: 48px;
+   margin-bottom: 48px;
+   color: #303030;
+   font-size: 14px;
+   text-align: center;
+   position: relative;
+}
+
+footer a, footer a:visited { color: #525252; }
+footer a:hover, footer a:focus { color: #fff; }
+
+/* copyright */
+footer .copyright {
+    margin: 0;
+    padding: 0;
+ }
+footer .copyright li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+}
+.ie footer .copyright li {
+   display: inline;
+}
+footer .copyright li:before {
+    content: "\2022";
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #095153;
+}
+footer .copyright  li:first-child:before {
+    display: none;
+}
+
+/* social links */
+footer .social-links {
+   margin: 18px 0 30px 0;
+   padding: 0;
+   font-size: 30px;
+}
+footer .social-links li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-left: 42px;
+    color: #F06000;
+}
+
+footer .social-links li:first-child { margin-left: 0; }
+
+/* Go To Top Button */
+#go-top {
+	position: absolute;
+	top: -24px;
+   left: 50%;
+   margin-left: -30px;
+}
+#go-top a {
+	text-decoration: none;
+	border: 0 none;
+	display: block;
+	width: 60px;
+	height: 60px;
+	background-color: #525252;
+
+	-webkit-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   -ms-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+
+   color: #fff;
+   font-size: 21px;
+   line-height: 60px;
+ 	border-radius: 100%;
+}
+#go-top a:hover { background-color: #0F9095; }
+
