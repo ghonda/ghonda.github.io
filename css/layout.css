@@ -276,6 +276,7 @@ ul#nav li.current a { color: #F06000; }
    border-bottom: 3px solid #F06000;
    padding-bottom: 6px;
 }
+
 #education h3 {
    font: 25px/30px 'opensans-bold', sans-serif;
    color: #FFFFFF;
@@ -286,6 +287,18 @@ ul#nav li.current a { color: #F06000; }
    color: #6A6A6A;
    margin-bottom: 18px;
    margin-top: 9px;
+}
+
+#education .item {
+  margin-bottom: 30px;
+}
+
+#education img{
+  width: 120px;
+  height: 65px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 5px;
 }
 
 /* ------------------------------------------------------------------ */
