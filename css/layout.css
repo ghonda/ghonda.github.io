@@ -256,7 +256,7 @@ ul#nav li.current a { color: #F06000; }
 }
 
 /* ------------------------------------------------------------------ */
-/* c. Education Section
+/* e. Education Section
 /* ------------------------------------------------------------------ */
 
 #education {
@@ -300,6 +300,97 @@ ul#nav li.current a { color: #F06000; }
   margin-right: 20px;
   border-radius: 5px;
 }
+
+/* ------------------------------------------------------------------ */
+/* f. Education Section
+/* ------------------------------------------------------------------ */
+
+#extra {
+   background: #2B2B2B;
+   padding-top: 70px;
+   padding-bottom: 0px;
+   overflow: hidden;
+}
+
+#extra h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   color: #FFFFFF;
+}
+#extra h1 span {
+   border-bottom: 3px solid #F06000;
+   padding-bottom: 6px;
+}
+
+#extra h3 {
+   font: 25px/30px 'opensans-bold', sans-serif;
+   color: #FFFFFF;
+}
+
+#extra .info {
+   font: 20px/28px 'opensans-bold', serif;
+   color: #6A6A6A;
+   margin-bottom: 0px;
+   margin-top: 9px;
+     height: 56px;
+}
+
+#extra .item {
+  margin-bottom: 0px;
+}
+
+#extra #content {
+  margin: 0 auto;
+  width: 650px;
+  height: 200px;
+}
+
+#extra #carrossel {
+  float: left;
+  width: 630px;
+  overflow: hidden;
+  height: 150px;
+}
+
+#extra #carrossel ul li {
+  width: 300px;
+  height: 150px;
+  float: left;
+  margin: 0 5px 0 5px;
+}
+
+#extra p {
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+#extra #menu-carrossel {
+  float: left;
+  width: 50%;
+  font-size: 30px;
+  display: inline;
+   font-weight : bold;
+}
+
+#extra #menu-carrossel .prev{
+  text-align: left;
+}
+
+#extra #menu-carrossel .next{
+  text-align: right;
+}
+
+#extra i{
+  font-size: x-large;
+  color: light-gray;
+  display: inline;
+  margin : 0px 10px 0px 0px;
+}
+
+#extra a, #extra a:visited  { color: #fff; }
+#extra a:hover, #extra a:focus { color: #F06000; }
+
 
 /* ------------------------------------------------------------------ */
 /* i. Footer
