@@ -213,6 +213,15 @@
           })
       })
 
+     $(window).scroll( function() { 
+         var scrolled_val = $(document).scrollTop().valueOf();
+         var a = $(document.getElementById('language')).scrollTop().valueOf();
+         if (scrolled_val > 4010 && scrolled_val < 4340 ){
+            $(document.getElementById('english')).width('80%');
+            $(document.getElementById('spanish')).width('25%');
+         } 
+      });
+
 
 
 
