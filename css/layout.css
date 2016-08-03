@@ -329,12 +329,12 @@ ul#nav li.current a { color: #F06000; }
 
 #extra h3 {
    font: 25px/30px 'opensans-bold', sans-serif;
-   color: #FFFFFF;
+   color: #F06000;
 }
 
 #extra .info {
    font: 20px/28px 'opensans-bold', serif;
-   color: #6A6A6A;
+   color: #FFFFFF;
    margin-bottom: 0px;
    height: 56px;
 }
@@ -368,10 +368,6 @@ ul#nav li.current a { color: #F06000; }
   margin-top: 10px;
 }
 
-#extra .course {
-    display: inline;
-}
-
 #extra #menu-carrossel {
   float: left;
   width: 50%;
@@ -392,11 +388,11 @@ ul#nav li.current a { color: #F06000; }
   font-size: x-large;
   color: white;
   display: inline;
-  margin : 0px 10px 0px 0px;
+  margin : 0px 10px 0px 20px;
 }
 
 #extra i:hover, #extra i:focus{
-  color: #F09000
+  color: #F06000
 }
 #extra .prev , #extra .prev :visited  { color: #F06000; }
 #extra .prev :hover, #extra .prev :focus { color: #F09000; font-size: 33px; }
@@ -505,15 +501,7 @@ footer .social-links {
    padding: 0;
    font-size: 30px;
 }
-footer .social-links li {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    margin-left: 42px;
-    color: #F06000;
-}
 
-footer .social-links li:first-child { margin-left: 0; }
 
 /* Go To Top Button */
 #go-top {
@@ -541,5 +529,5 @@ footer .social-links li:first-child { margin-left: 0; }
    line-height: 60px;
  	border-radius: 100%;
 }
-#go-top a:hover { background-color: #0F9095; }
+#go-top a:hover { background-color: #F06000; }
 
