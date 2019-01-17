@@ -1,42 +1,564 @@
-<script language="Javascript">
-   var YY = 2018;
-   var MM = 12;
-   var DD = 14;
-   var HH = 19;
-   var MI = 00;
-   var SS = 00;
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="pt"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="pt"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="pt"> <!--<![endif]-->
+<head>
+   <!--- Basic Page Needs -->
+   <meta charset="utf-8">
+	<title>Guilherme Honda - Developer</title>
+	<meta name="description" content="Curriculum Guilherme Honda">
+	<meta name="author" content="Guilherme Honda">
 
-   function atualizaContador() {
-      var hoje = new Date();
-      var futuro = new Date(YY, MM - 1, DD, HH, MI, SS);
-      var ss = parseInt((futuro - hoje) / 1000);
-      var mm = parseInt(ss / 60);
-      var hh = parseInt(mm / 60);
-      var dd = parseInt(hh / 24);
-      ss = ss - (mm * 60);
-      mm = mm - (hh * 60);
-      hh = hh - (dd * 24);
-      var faltam = '';
-      faltam += (dd && dd > 1) ? dd + ' dias, ' : (dd == 1 ? '1 dia, ' : '');
-      faltam += (toString(hh).length) ? hh + ' hr, ' : '';
-      faltam += (toString(mm).length) ? mm + ' min e ' : '';
-      faltam += ss + ' seg';
+   <!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-      if (dd + hh + mm + ss > 0) {
-         document.getElementById('contador').innerHTML = faltam;
-         setTimeout(atualizaContador, 1000);
-      }
-      else {
-         document.getElementById('contador').innerHTML = 'CHEGOU!!!!';
-         setTimeout(atualizaContador, 1000);
-      }
-   }
-</script>
+	<!-- CSS -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+   <link rel="stylesheet" href="css/bootstrap-progressbar-3.3.4.css">
+   
+   <!-- Script -->
+	<script src="js/modernizr.js"></script>
 
-<body onLoad="atualizaContador()">
+   <!-- Favicons -->
+	<link rel="shortcut icon" href="icon.png" >
 
-   Faltam <strong> <span id="contador"></span> </strong> para o Caputo ficar livre! 
-</br>
-   <img src="images/61c33909-ceed-4de2-9154-d7e1b23da320.jpg" alt="Smiley face" height="542" width="342">
+</head>
+<body>
+   <!-- Menu -->
+   <div id="menu">
+      <nav id="nav-wrap">
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#profile">Perfil</a></li>
+	         <li><a class="smoothscroll" href="#work">Experiência</a></li>
+            <li><a class="smoothscroll" href="#skill">Habilidades</a></li>
+            <li><a class="smoothscroll" href="#education">Educação</a></li>
+            <li><a class="smoothscroll" href="#extra">Extra Curricular</a></li>
+            <li><a class="smoothscroll" href="#language">Idiomas</a></li>
+         </ul> 
+      </nav>
+   </div> 
+   <!-- Header End -->
+
+
+   <!-- Profile Section -->
+   <section id="profile">
+      <div class="row">
+         <div class="three columns">
+            <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
+         </div>
+
+         <div class="nine columns main-col">
+            <h1><span>G</span>uilherme <span>H</span>onda</h1>
+            <div class="row">
+               <div class="columns contact-details">
+                  <p class="address">
+						   <i class="fa fa-home"></i><span> Rua dos Tapes, 67 - Liberdade <br>
+                     &nbsp &nbsp &nbsp &nbspSão Paulo - SP </span><br>
+						   <i class="fa fa-phone"></i><span> +55 (11) 95943-3808</span><br>
+                     <i class="fa fa-envelope"></i><span> guilhermehonda@gmail.com</span>
+					   </p>
+               </div>
+               <div class="columns download">
+                  <p>
+                     <a href="uploads/GuilhermeHonda.pdf"  target="_blank" class="button"><i class="fa fa-download"></i>Download Curriculum</a>
+                  </p>
+               </div>
+            </div> 
+
+            <ul class="social">
+               <li><a href="https://www.facebook.com/guihonda" target="_blank"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="https://twitter.com/hondacomfome" target="_blank"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="https://www.linkedin.com/in/guilherme-honda" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://www.instagram.com/gui_honda/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="skype:honda_lug?chat"><i class="fa fa-skype"></i></a></li>
+               <li><a href="https://github.com/ghonda" target="_blank"><i class="fa fa-github"></i></a></li>
+            </ul>
+
+         </div> 
+      </div>
+   </section> 
+   <!-- Profile Section End-->
+
+
+   <!-- Work Section -->
+   <section id="work">
+      <div class="row work">
+         <div class="three columns header-col">
+            <h1><span>Experiência</span></h1>
+         </div>
+         <div class="nine columns main-col">
+            
+            <div class="row item">
+               <div class="twelve columns">
+                  <h3>Programador C# / Delphi</h3>
+                  <p class="info">
+                     <a href="http://www.funcao.com.br/" target="_blank" >Função Informática</a><span>&bull;</span> 
+                     <em class="date">Jan 2016 - Abril 2016</em>
+                  </p>
+
+                  <ul>
+                     <li>Desenvolvimento de novas aplicações e manutenção do sistema legado em Asp.Net Web Forms, Windows Form e Delphi.</li>
+                     <li>Elaboração de relatórios para Bancos.</li>
+                     <li>Criação de procedures em SQL Server.</li>
+                     <li>Criação de documentação do software e de testes.</li>
+                  </ul>
+
+               </div>
+            </div>
+
+            <div class="row item">
+               <div class="twelve columns">
+                  <h3>Programador C#</h3>
+                  <p class="info">
+                     <a href="http://levelupgames.uol.com.br/levelup/" target="_blank" >Level Up! Interactive S.A.</a><span>&bull;</span> 
+                     <em class="date">Dez 2011 - Abril 2015</em>
+                  </p>
+
+                  <ul>
+                     <li>Desenvolvimento de softwares web internos, externos e  serviços Windows, manutenção e novas implementações de sistemas legados e  tratamento de front end. </li>
+                     <li>Elaboração de relatórios e criação de procedures utilizando SQL Server e MySql </li>
+                     <li><strong>Tecnologias usadas:</strong> HTML, CSS, JavaScript, JQuery, C #, ASP.NET Web Forms, ASP.NET MVC, Asp.Net Web API, Nancy FX, MySql e SQL Server </li>
+                     <li><strong> Metodologias:</strong>  TDD, DDD, SOLID, Scrum e Design Patterns.</li>
+                  </ul>
+
+               </div>
+            </div> 
+
+            <div class="row item">
+               <div class="twelve columns">
+                  <h3>Programador Delphi</h3>
+                  <p class="info">Liderall Informática<span>&bull;</span> 
+                     <em class="date">Jul 2011 - Out 2011</em>
+                  </p>
+
+                  <ul>
+                     <li>Desenvolvimento e correção de bugs do sistema ERP da empresa utilizando Delphi. </li>
+                     <li>Elaboração de relatórios em FireBird.</li>
+                     <li>Atendimento aos usuários do software esclarecendo suas dúvidas.</li>
+                  </ul>
+
+               </div>
+            </div> 
+
+            <div class="row item">
+               <div class="twelve columns">
+                  <h3>Suporte Técnico</h3>
+                  <p class="info">
+                     <a href="http://intelecta.com.br/" target="_blank" >Intelecta Tecnologia</a><span>&bull;</span> 
+                     <em class="date">Mar 2010 - Nov 2010</em>
+                  </p>
+
+                  <ul>
+                     <li>Atendimento aos usuários do software ERP da empresa,esclarecendo suas dúvidas e corrigindo erros.</li>
+                     <li>Auxiliar usuários a emitir Nota Fiscal Eletrônica.</li>
+                     <li>Auxiliar usuários na configuração do software.</li>
+                  </ul>
+
+               </div>
+            </div> 
+         </div> 
+      </div> 
+   </section>
+   <!-- End Work -->
+     
+   <!-- Skill Section--> 
+   <section id="skill">
+      <div class="row">
+         <div class="three columns header-col">
+            <h1><span>Habilidades</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+            <h4>Frameworks</h4>
+              <div class="row">
+                  <span class="chart" data-percent="65" id="webforms" onmouseenter="reload(id,65)">
+                     <img src="images/skill/webforms.jpg" onmouseover="Tip('Asp.Net WebForms')" onmouseout = "UnTip()";>
+                  </span>
+                  <span class="chart" data-percent="86" id="mvc" onmouseenter="reload(id,86)">
+                     <img src="images/skill/mvc.jpg" onmouseover="Tip('Asp.Net MVC')" onmouseout = "UnTip()">
+                  </span>
+                  <span class="chart" data-percent="72" id="nancy" onmouseenter="reload(id,72)">
+                     <img src="images/skill/nancy.jpg" onmouseover="Tip('NancyFx')" onmouseout = "UnTip()">
+                  </span>
+              </div>
+
+            <h4>Linguagens</h4>
+              <div class="row">
+                  <span class="chart" data-percent="93" id="cs" onmouseenter="reload(id,93)">
+                     <img src="images/skill/cs.png" onmouseover="Tip('C#')" onmouseout = "UnTip()"></span>
+                  <span class="chart" data-percent="33" id="delphi" onmouseenter="reload(id,33)">
+                     <img src="images/skill/delphi.jpg" onmouseover="Tip('Delphi')" onmouseout = "UnTip()">
+                  </span>
+              </div>
+ 
+            <h4>Banco de Dados</h4>
+              <div class="row">
+                  <span class="chart" data-percent="52" id="sqlServer" onmouseenter="reload(id,52)">
+                     <img src="images/skill/sqlServer.jpg" onmouseover="Tip('Sql Server')" onmouseout = "UnTip()">
+                  </span>
+                  <span class="chart" data-percent="45" id="mySql" onmouseenter="reload(id,45)">
+                     <img src="images/skill/mySql.jpg" onmouseover="Tip('MySql')" onmouseout = "UnTip()">
+                  </span>
+                  <span class="chart" data-percent="21" id="fireBird" onmouseenter="reload(id,21)">
+                     <img src="images/skill/fireBird.gif" onmouseover="Tip('FireBird')" onmouseout = "UnTip()">
+                  </span>
+              </div>
+
+            <h4>Front End</h4>
+              <div class="row">
+                  <span class="chart" data-percent="65" id="html" onmouseenter="reload(id,65)">
+                     <img src="images/skill/html.jpg" onmouseover="Tip('HTML')" onmouseout = "UnTip()">
+                  </span>
+                  <span class="chart" data-percent="58" id="css" onmouseenter="reload(id,58)">
+                     <img src="images/skill/css.jpg" onmouseover="Tip('CSS')" onmouseout = "UnTip()">
+                  </span>
+                  <span class="chart" data-percent="62" id="javascript" onmouseenter="reload(id,62)">
+                     <img src="images/skill/javascript.jpg" onmouseover="Tip('JavaScript')" onmouseout = "UnTip()">
+                  </span>
+              </div>
+              <div class="row">
+                  <span class="chart" data-percent="41" id="jquery" onmouseenter="reload(id,41)">
+                     <img src="images/skill/jquery.jpg" onmouseover="Tip('jQuery')" onmouseout = "UnTip()">
+                  </span>
+                  <span class="chart" data-percent="70" id="angular" onmouseenter="reload(id,70)">
+                     <img src="images/skill/angular.jpg" onmouseover="Tip('Angular js')" onmouseout = "UnTip()">
+                  </span>
+                  <span class="chart" data-percent="34" id="bootstrap" onmouseenter="reload(id,34)">
+                     <img src="images/skill/bootstrap.png" onmouseover="Tip('Bootstrap')" onmouseout = "UnTip()">
+                  </span>
+              </div>
+
+            <h4>Versionamento</h4>
+              <div class="row">
+                  <span class="chart" data-percent="82" id="git" onmouseenter="reload(id,82)">
+                     <img src="images/skill/git.jpg" onmouseover="Tip('GIT')" onmouseout = "UnTip()">
+                  </span>
+                  <span class="chart" data-percent="45" id="tortoiseSVN" onmouseenter="reload(id,45)">
+                     <img src="images/skill/tortoiseSVN.jpg" onmouseover="Tip('Tortoise SVN')" onmouseout = "UnTip()">
+                  </span>
+                  <span class="chart" data-percent="49" id="tfs" onmouseenter="reload(id,49)">
+                     <img src="images/skill/tfs.jpg" onmouseover="Tip('Team Foundation Server')" onmouseout = "UnTip()">
+                  </span>
+              </div>
+
+            <h4>Gerenciamento</h4>
+              <div class="row">
+                  <span class="chart" data-percent="68" id="bower" onmouseenter="reload(id,68)">
+                     <img src="images/skill/bower.jpg" onmouseover="Tip('Bower')" onmouseout = "UnTip()">
+                  </span>
+                  <span class="chart" data-percent="29" id="npm" onmouseenter="reload(id,29)">
+                     <img src="images/skill/npm.jpg" onmouseover="Tip('NPM')" onmouseout = "UnTip()">
+                  </span>
+              </div>
+
+            <h4>Metodologias</h4>
+              <div class="row">
+                  <span class="chart" data-percent="65" id="scrum" onmouseenter="reload(id,65)">
+                     <img src="images/skill/scrum.jpg" onmouseover="Tip('Scrum')" onmouseout = "UnTip()">
+                  </span>
+                  <span class="chart" data-percent="58" id="tdd" onmouseenter="reload(id,58)">
+                     <img src="images/skill/tdd.jpg" onmouseover="Tip('TDD')" onmouseout = "UnTip()">
+                  </span>
+              </div>
+         </div> 
+      </div> 
+   </section> 
+   <!-- Skill Section End-->
+
+   <!-- Education Section-->
+   <section id="education">
+
+      <div class="row education">
+
+         <div class="three columns header-col">
+            <h1><span>Educação</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+               <div class="twelve columns">
+                  <img src="images/education/fatec.png">
+                  <h3>Analise de Sistemas</h3>
+                  <p class="info">Fatec - São Caetano do Sul<span> &bull;</span> <em class="date">2009 - 2012</em></p>
+               </div>
+            </div> 
+
+            <div class="row item">
+               <div class="twelve columns">
+                  <img src="images/education/uninove.jpg">
+                  <h3>Gestão em Redes de Computadores</h3>
+                  <p class="info">Universidade Nove de Julho - Vergueiro<span> &bull;</span> <em class="date">2008 - 2010</em></p>
+               </div>
+            </div> 
+
+            <div class="row item">
+               <div class="twelve columns">
+                  <img src="images/education/ca.jpg">
+                  <h3>Técnico de Informática</h3>
+                  <p class="info">ETEC Professor Camargo Aranha<span> &bull;</span> <em class="date">2007 - 2008</em></p>
+               </div>
+            </div> 
+
+         </div> 
+      </div> 
+   </section>
+   <!-- End Education -->
+
+   <!-- Extra Section-->
+   <section id="extra">
+
+      <div class="row">
+
+         <div class="three columns header-col">
+            <h1><span>Extra Curricular</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div id="content">
+               <div id="carrossel">
+                  <ul>
+
+                     <li>
+                         <div class="row item">
+                           <div class="twelve columns">
+                              <h3>School of Net</h3>
+                              <p> 
+                                 <em class="date">Agosto de 2016</em>
+                                 <a href="images/extra/certificate-solid-com-c.jpg" target="_blank" ><i class="fa fa-file"></i></a>
+                              </p>
+                              <p class="info">Solid com C#</p>
+                           </div>
+                        </div> 
+                     </li>
+
+                     <li>
+                         <div class="row item">
+                           <div class="twelve columns">
+                              <h3>School of Net</h3>
+                              <p> 
+                                 <em class="date">Agosto de 2016</em>
+                                 <a href="images/extra/certificate-iniciando-com-mongodb.jpg" target="_blank" ><i class="fa fa-file"></i></a>
+                              </p>
+                              <p class="info">Iniciando com MongoDB</p>
+                           </div>
+                        </div> 
+                     </li>
+
+                     <li>
+                         <div class="row item">
+                           <div class="twelve columns">
+                              <h3>SEDA College</h3>
+                              <p> 
+                                 <em class="date">Maio a Outubro de 2015</em>
+                                 <a href="" target="_blank" ><i class="fa fa-file"></i></a>
+                              </p>
+                              <p class="info">English proficiency</p>
+                           </div>
+                        </div> 
+                     </li>
+
+                     <li>
+                         <div class="row item">
+                           <div class="twelve columns">
+                              <h3>Level Up</h3>
+                              <p> 
+                                 <em class="date">Setembro de 2014</em>
+                                 <a href="" target="_blank" ><i class="fa fa-file"></i></a>
+                              </p>
+                              <p class="info">Gestão de Projetos</p>
+                           </div>
+                        </div> 
+                     </li>
+
+                     <li>
+                         <div class="row item">
+                           <div class="twelve columns">
+                              <h3>BFBiz</h3>
+                              <p> 
+                                 <em class="date">Março de 2014</em>
+                                 <a href="" target="_blank" ><i class="fa fa-file"></i></a>
+                              </p>
+                              <p class="info">Develoing ASP.NET MVC 4 Web Applications</p>
+                           </div>
+                        </div> 
+                     </li>
+
+                     <li>
+                         <div class="row item">
+                           <div class="twelve columns">
+                              <h3>BFBiz</h3>
+                              <p> 
+                                 <em class="date">Julho de 2013</em>
+                                 <a href="" target="_blank" ><i class="fa fa-file"></i></a>
+                              </p>
+                              <p class="info">Developing Data Acess Solutions with VS2010</p>
+                           </div>
+                        </div> 
+                     </li>
+
+                     <li>
+                         <div class="row item">
+                           <div class="twelve columns">
+                              <h3>BFBiz</h3>
+                              <p> 
+                                 <em class="date">Junho de 2013</em>
+                                 <a href="" target="_blank" ><i class="fa fa-file"></i></a>
+                              </p>
+                              <p class="info">Introduction to Web Development with VS2010</p>
+                           </div>
+                        </div> 
+                     </li>
+
+                     <li>
+                         <div class="row item">
+                           <div class="twelve columns">
+                              <h3>BFBiz</h3>
+                              <p> 
+                                 <em class="date">Maio de 2013</em>
+                                 <a href="" target="_blank" ><i class="fa fa-file"></i></a>
+                              </p>
+                              <p class="info">Programming in C# with VS2010</p>
+                           </div>
+                        </div> 
+                     </li>
+
+                     <li>
+                         <div class="row item">
+                           <div class="twelve columns">
+                              <h3>Impacta Certificações</h3>
+                              <p> 
+                                 <em class="date">Setembro de 2011</em>
+                                 <a href="" target="_blank" ><i class="fa fa-file"></i></a>
+                              </p>
+                              <p class="info">C# Modulo I</p>
+                           </div>
+                        </div> 
+                     </li>
+
+                     <li>
+                         <div class="row item">
+                           <div class="twelve columns">
+                              <h3>Impacta Certificações</h3>
+                              <p> 
+                                 <em class="date">Julho de 2011</em>
+                                 <a href="" target="_blank" ><i class="fa fa-file"></i></a>
+                              </p>
+                              <p class="info">Introdução a Programação Orientada a Objeto</p>
+                           </div>
+                        </div> 
+                     </li>
+
+                     <li>
+                         <div class="row item">
+                           <div class="twelve columns">
+                              <h3>Impacta Certificações</h3>
+                              <p> 
+                                 <em class="date">Agosto de 2010</em>
+                                 <a href="" target="_blank" ><i class="fa fa-file"></i></a>
+                              </p>
+                              <p class="info">SQL 2008 Modulo II</p>
+                           </div>
+                        </div> 
+                     </li>
+
+                     <li>
+                         <div class="row item">
+                           <div class="twelve columns">
+                              <h3>Impacta Certificações</h3>
+                              <p> 
+                                 <em class="date">Julho de 2010</em>
+                                 <a href="" target="_blank" ><i class="fa fa-file"></i></a>
+                              </p>
+                              <p class="info">SQL 2008 Modulo I</p>
+                           </div>
+                        </div> 
+                     </li>
+
+                  </ul>
+               </div>
+               <nav id="menu-carrossel" align="left">
+                  <a href="#" class="prev" title="Anterior"><</a>
+               </nav>
+               <nav id="menu-carrossel" align="right">
+                  <a href="#" class="next" title="Próximo">></a>
+               </nav>
+            </div>
+
+         </div> 
+      </div> 
+   </section>
+   <!-- End Extra -->
+
+   <!-- Languages Section-->
+   <section id="language">
+      <div class="row">
+         <div class="three columns header-col">
+            <h1><span>Idiomas</span></h1>
+         </div>
+         <div class="nine columns main-col">
+            <div class="row item">
+               <div class="twelve columns">
+                  <p class="info"><img src="images/usa.png">Inglês</p>
+                  <div class="progress">
+                     <div class="progress-bar" id="english" role="progressbar">
+                        <span class="sr-only">Avançado</span>
+                     </div>
+                  </div>  
+               </div>
+            </div>
+
+            <div class="row item">
+               <div class="twelve columns">
+                  <p class="info"><img src="images/spanish.png">Espanhol </p>
+                  <div class="progress">
+                     <div class="progress-bar" id="spanish" role="progressbar">
+                        <span class="sr-only">Basico</span>
+                     </div>
+                  </div>  
+               </div>
+            </div>
+
+            
+         </div> 
+      </div> 
+   </section>
+   <!-- End Languages -->
+
+   
+   <!-- footer -->
+   <footer>
+      <div class="row">
+         <div class="twelve columns">
+               <ul class="copyright">
+               <li>Criado por <strong>Guilherme Honda</strong></li>   
+            </ul>
+         </div>
+         <div id="go-top"><a class="smoothscroll" title="Inicio" href="#profile"><i class="icon-up-open"></i></a></div>
+      </div>
+   </footer> 
+   <!-- Footer End-->
+
+   <!-- Java Script -->
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script src="js/jquery-migrate-1.2.1.min.js"></script>
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+   <script src="js/bootstrap.js"></script>
+   <script src="js/wz_tooltip.js"></script>
+   <script src="js/jquery.easypiechart.js"></script>
+   <script src="js/jcarousellite.js"></script>
+   <script src="js/bootstrap-progressbar.js"></script>
 
 </body>
+</html>
