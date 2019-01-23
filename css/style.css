@@ -441,6 +441,14 @@ a.info-endereco-item:hover,
 [data-skill='tdd'] {
   background-image: url('../img/skills/tdd.jpg');
 }
+[data-skill='postgre'] {
+  background-image: url('../img/skills/postgre.jpg');
+}
+[data-skill='core'] {
+  background-image: url('../img/skills/core.jpg');
+}
+
+
 .skill-item > div {
   display: flex;
   position: absolute;

@@ -331,6 +331,7 @@ $(document).ready(function() {
   function skillFramework() {
     startSkill('asp', 0.65);
     startSkill('net', 0.86);
+    startSkill('core', 0.82);
     startSkill('nancy', 0.72);
   }
 
@@ -340,17 +341,18 @@ $(document).ready(function() {
   }
 
   function skillBanco() {
-    startSkill('sqlserver', 0.52);
+    startSkill('sqlserver', 0.67);
+    startSkill('postgre', 0.55);
     startSkill('mysql', 0.45);
     startSkill('firebird', 0.21);
   }
 
   function skillFront() {
-    startSkill('html', 0.65);
-    startSkill('css', 0.58);
-    startSkill('js', 0.62);
+    startSkill('html', 0.55);
+    startSkill('css', 0.48);
+    startSkill('js', 0.42);
     startSkill('jquery', 0.41);
-    startSkill('angular', 0.7);
+    startSkill('angular', 0.3);
     startSkill('bootstrap', 0.34);
   }
 
@@ -361,7 +363,7 @@ $(document).ready(function() {
   }
 
   function skillGerenciamento() {
-    startSkill('bower', 0.68);
+    startSkill('bower', 0.38);
     startSkill('npm', 0.29);
   }
 
